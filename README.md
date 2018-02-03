@@ -53,5 +53,4 @@ We use SemVer for versioning. For the versions available, see the tags on this r
 This project is licensed under the MIT License - see the LICENSE file for details
 
 ## Acknowledgments
-- The creators of BungeeCord and SpigotMC
 - README based on PurpleBooth's template
