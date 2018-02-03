@@ -1,0 +1,16 @@
+language: java
+jdk:
+- oraclejdk9
+deploy:
+  provider: releases
+  api_key:
+    secure: jbRLq/Y63ZtTNJwkTiaCsKKk4ACoT5i4Owf5jMdz103c6dorIMGkLXvkE1O4a1sTZjcjEoRJNt86TvbC7dwPYsuC8t1v6fkzQMeHF+7e1p2UrBKsGvoJ4zy+qJvMHv05qQ89D8CgVR4btPXgLgWY233UNGWWAHRKa/j3uPNZNjj2Q3lJVJemn2H7irB0gEhLR9Ao4SemPNqn/Ex0AStq48lMqq7H/okbXeo0N4TpKaKan2xzGSorQHuJTNhuX/L+BY57UvnOEHw+EWMTfqwe5yNt8bWh1rvMBRuairJ0JaM7wcd575WBWtqf12LIrfz7u76DGfIqI99qUU8+wZbkNdbDZpmDUBuWTyUrO4Gm8adv2PpXVImGZPFVj/0KMEau4Ekl4C8llwgjZgb8suZctjz6eg7ITZeBDstQwRZhRnuafV+V7+7vfnP2naY++9sAoq1CPgQ0TQsOuuRcPH7EEGXru+u0jwXdYyfkdSPQ/q+zVzyBSFlyX8dya0MNhJMmeUv/qseiddNNuIhyI+4gzFPeQ4cYQtMDYyy5fQPH/5Sb6DNTjnht4V3fh8L/NSxt26AcIhcKmXrOqb0xK/+3ekHG2vvjNbaiH11ynvVdgH9BgZMdVlLrApoFji2N7RKLKXRgdKED+urJYhn9haIKmQHLEuZ66OVi5nIPopBCgpU=
+  file: "$TRAVIS_BUILD_DIR/target/PluginTemplate*.jar"
+  skip_cleanup: true
+  on:
+    repo: frklan/PrometheusTemplatePlugin
+    tags: false
+notifications:
+  email:
+    on_success: never
+    on_failure: change

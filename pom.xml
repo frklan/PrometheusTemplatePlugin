@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+	<!-- CHANGE THIS -->
+  <groupId>com.yellowfortyfour</groupId>
+  <artifactId>PluginTemplate</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>PluginTemplate-Plugin</name>
+  <url>http://www.yellowfortyfour.com</url>
+	<description>
+		A plugin template for the Prometheus project.
+	</description>
+	<inceptionYear>2018</inceptionYear>
+	<!-- CHANGE THIS -->
+
+	<licenses>
+		<license>
+			<name>MIT-license</name>
+			<url>https://raw.githubusercontent.com/frklan/PrometheusTemplatePlugin/master/LICENSE</url>
+			<distribution>repo</distribution>
+			<comments></comments>
+		</license>
+	</licenses>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+
+
+	<repositories>
+    	<repository>
+			<id>apollo-api</id>
+			<url>https://github.com/frklan/Apollo/releases/download/v0.0.1/apollo-api-0.0.1-SNAPSHOT.jar</url>
+		</repository>
+	</repositories>
+ 
+ 	<dependencies>
+		<dependency>
+			<groupId>com.yellowfortyfour</groupId>
+			<artifactId>apollo-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+ 	</dependencies>
+
+
+	<build>
+		<finalName>${project.artifactId}-${project.version}</finalName>
+		<plugins>
+
+			<plugin>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-shade-plugin</artifactId>
+		    <version>2.3</version>
+		    <configuration>
+		        <createDependencyReducedPom>false</createDependencyReducedPom>
+					<artifactSet>
+  					<includes>
+  						<include>*:*</include>
+  					</includes>
+  				</artifactSet>
+		    </configuration>
+		    <executions>
+		        <execution>
+		            <phase>package</phase>
+		            <goals>
+		                <goal>shade</goal>
+		            </goals>
+		        </execution>
+		    </executions>
+			</plugin> 
+
+	    </plugins>
+    </build>
+</project>
