@@ -1,6 +1,6 @@
 # Apollo
 [![Java 8](https://img.shields.io/badge/Java-8-brightgreen.svg)](http://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html)
-[![Build Status](https://travis-ci.org/frklan/PrometheusTemplatePlugin.svg?branch=master)](https://travis-ci.org/frklan/PrometheusTemplatePlugin)
+<!--[![Build Status](https://travis-ci.org/frklan/PrometheusTemplatePlugin.svg?branch=master)](https://travis-ci.org/frklan/PrometheusTemplatePlugin) -->
 [![GitHub release](https://img.shields.io/github/release/frklan/PrometheusTemplatePlugin.svg)](https://github.com/frklan/PrometheusTemplatePlugin/releases)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/frklan/PrometheusTemplatePlugin/issues)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://github.com/frklan/PrometheusTemplatePlugin/blob/master/LICENSE)
@@ -8,7 +8,7 @@
 
 Part of the Prometheus project.
 
-A plugin template for project (https://github.com/frklan/Apollo)[Prometheus].
+A plugin template for project [rometheus](https://github.com/frklan/Apollo).
 
 ## Compiling and running
 Prerequisites
@@ -28,7 +28,7 @@ $ mvn package
 
 ### Running
 
-1. download and compile the [Apollo launcher]((https://github.com/frklan/Apollo/releases)
+1. download and compile the [Apollo launcher](https://github.com/frklan/Apollo/releases)
 
 2. clone and compile this repository, see above
 
