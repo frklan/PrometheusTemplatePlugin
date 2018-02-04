@@ -8,7 +8,7 @@
 
 Part of the Prometheus project.
 
-A plugin template for project (https://github.com/frklan/Apollo)[Prometheus].
+A plugin template for project [https://github.com/frklan/Apollo](Prometheus).
 
 ## Compiling and running
 Prerequisites
@@ -28,7 +28,7 @@ $ mvn package
 
 ### Running
 
-1. download and compile the [Apollo launcher]((https://github.com/frklan/Apollo/releases)
+1. download and compile the [Apollo launcher](https://github.com/frklan/Apollo/releases)
 
 2. clone and compile this repository, see above
 
