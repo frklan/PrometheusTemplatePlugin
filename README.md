@@ -5,10 +5,9 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/frklan/PrometheusTemplatePlugin/issues)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://github.com/frklan/PrometheusTemplatePlugin/blob/master/LICENSE)
 
-
 Part of the Prometheus project.
 
-A plugin template for project [rometheus](https://github.com/frklan/Apollo).
+A plugin template for project [Prometheus](https://github.com/frklan/Apollo).
 
 ## Compiling and running
 Prerequisites
